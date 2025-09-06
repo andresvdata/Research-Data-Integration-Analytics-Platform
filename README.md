@@ -10,7 +10,7 @@ A brief description of the purpose, context (Research & Innovation Department), 
 ---
 ## 🏗 Architecture
 
-![Platform Architecture Diagram](docs/architecture-diagram.png)  
+![Platform Architecture Diagram](src/Main.png)  
 *High-level architecture showing the interaction between components and authentication flow.*
 
 
