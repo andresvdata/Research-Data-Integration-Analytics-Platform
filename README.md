@@ -4,11 +4,11 @@ A fully integrated research data management and analytics environment was design
 The platform was built using **containerized services** orchestrated with **Docker**, ensuring portability, scalability, and reproducibility across environments.
 
 
-## 📌 Overview
+##  Overview
 A brief description of the purpose, context (Research & Innovation Department), and high-level impact.
 
 ---
-## 🏗 Architecture
+##  Architecture
 
 ![Platform Architecture Diagram](src/Main.png)  
 *High-level architecture showing the interaction between components and authentication flow.*
@@ -67,16 +67,20 @@ This implementation:
 
 
 
-## 📹 Demonstrations
+##  User Flow
 
 ### 1. End-to-End Workflow
-*Video link or GIF showing:*  
-- Login via SSO  
-- Accessing eLabFTW  
-- Running an Airflow pipeline  
-- Viewing results in Superset
-
-### 2. Data Pipeline Execution
-*GIF showing Airflow DAG run in real-time.*
+- Login in Keycloak
+  ![Login Keycloak](src/23.png)
+- Login to Django Portal: This portal is temporary, this is why the UI does not finished.  
+  The user now is able to access to either 3 applications implemented: Airflow, Superset or elabFTW.  
+  _Note: This user has privilegues to access to all apps. If there is any user with one app permission, the UI will only show one app._  
+  ![Login Keycloak](src/7.png)
+- Accessing to Airflow:
+  ![Airflow](src/airflow.gif)
+- Accessing to SuperSet:
+  ![SuperSet](src/superset.gif)
+- Accessing to elabFTW: Once the user click on elabFTW app, it will open a new window with the app, as shown.
+  ![elabFTW](src/elabftw.gif)
 
 
