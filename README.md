@@ -77,10 +77,10 @@ This implementation:
   _Note: This user has privilegues to access to all apps. If there is any user with one app permission, the UI will only show one app._  
   ![Login Keycloak](src/7.png)
 - Accessing to Airflow:
-  ![Login Keycloak](src/6.png)
+  ![Airflow](src/airflow.gif)
 - Accessing to SuperSet:
-  ![Login Keycloak](src/24.png)
+  ![SuperSet](src/superset.gif)
 - Accessing to elabFTW: Once the user click on elabFTW app, it will open a new window with the app, as shown.
-  ![Login Keycloak](src/1.png)
+  ![elabFTW](src/elabftw.gif)
 
 
