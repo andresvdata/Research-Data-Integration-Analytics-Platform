@@ -12,22 +12,16 @@ A brief description of the purpose, context (Research & Innovation Department), 
 
 ![Platform Architecture Diagram](src/Main.png)  
 *High-level architecture showing the interaction between components and authentication flow.*
-
-
 ---
-
 ## **Core Components**
 
 - **postgres** – Created a database to centralize the data generated in the labs.
-- 
 - **eLabFTW** – Configured as the department’s **Electronic Lab Notebook (ELN)**  
   - Customized for research workflows and metadata standards  
   - Enabled timestamped data certification for reproducibility and compliance  
-
 - **Apache Airflow** – Deployed for **ETL automation** and data orchestration
   - Scheduled ingestion, transformation, and synchronization of datasets  
   - Modular pipelines to support multiple research projects in parallel  
-
 - **Apache Superset** – Integrated for **interactive dashboards and advanced analytics**  
   - Connected to operational and analytical databases for real-time reporting  
   - Designed visualizations to monitor research activity, trends, and KPIs  
@@ -36,11 +30,11 @@ A brief description of the purpose, context (Research & Innovation Department), 
 
 ## **Security & Authentication**
 
-- **Keycloak** implemented as the **central identity provider**  
-  - Used **OpenID Connect** and **SAML** for single sign-on (SSO) across all services  
-  - Managed **role-based access control (RBAC)** to enforce data governance policies  
+- **Keycloak** implemented as the central identity provider  
+  - Used OpenID Connect and SAML for single sign-on (SSO) across all services  
+  - Managed role-based access control (RBAC) to enforce data governance policies  
 
-- **NGINX Reverse Proxy** with **SSL/TLS encryption**  
+- **NGINX Reverse Proxy** with SSL/TLS encryption
   - Domain-based routing for each service  
   - Enforced secure access via HTTPS for all endpoints  
 
@@ -59,13 +53,11 @@ A brief description of the purpose, context (Research & Innovation Department), 
 
 This implementation:  
 
-- Consolidated multiple research tools into a **single, cohesive platform**  
+- Consolidated multiple research tools into a single, cohesive platform 
 - Reduced administrative overhead through automation and SSO  
 - Improved collaboration and data transparency across research teams  
-- Established a **standardized data lifecycle** from capture to visualization  
-- Created a foundation for future **machine learning and predictive analytics** initiatives  
-
-
+- Established a standardized data lifecycle from capture to visualization  
+- Created a foundation for future machine learning and predictive analytics initiatives  
 
 ##  User Flow
 
@@ -76,11 +68,11 @@ This implementation:
   The user now is able to access to either 3 applications implemented: Airflow, Superset or elabFTW.  
   _Note: This user has privilegues to access to all apps. If there is any user with one app permission, the UI will only show one app._  
   ![Login Keycloak](src/7.png)
-- Accessing to Airflow:
+- Accessing to Airflow:  
   ![Airflow](src/airflow.gif)
-- Accessing to SuperSet:
+- Accessing to SuperSet:  
   ![SuperSet](src/superset.gif)
-- Accessing to elabFTW: Once the user click on elabFTW app, it will open a new window with the app, as shown.
+- Accessing to elabFTW: Once the user click on elabFTW app, it will open a new window with the app, as shown.  
   ![elabFTW](src/elabftw.gif)
 
 
