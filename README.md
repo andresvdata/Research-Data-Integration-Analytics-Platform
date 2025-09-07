@@ -72,13 +72,13 @@ This implementation:
 ### 1. End-to-End Workflow
 - Login in Keycloak
   ![Login Keycloak](src/23.png)
-- Login to Django Portal: This portal is temporary, this is why the UI does not finished.
-  The user now is able to access to either 3 applications implemented: Airflow, Superset or elabFTW.
-  _Note: This user has privilegues to access to all apps. If there is any user with one app permission, the UI will only show one app._
+- Login to Django Portal: This portal is temporary, this is why the UI does not finished.  
+  The user now is able to access to either 3 applications implemented: Airflow, Superset or elabFTW.  
+  _Note: This user has privilegues to access to all apps. If there is any user with one app permission, the UI will only show one app._  
   ![Login Keycloak](src/7.png)
 - Accessing to Airflow:
   ![Login Keycloak](src/6.png)
-  - Accessing to SuperSet:
+- Accessing to SuperSet:
   ![Login Keycloak](src/24.png)
 - Accessing to elabFTW: Once the user click on elabFTW app, it will open a new window with the app, as shown.
   ![Login Keycloak](src/1.png)
